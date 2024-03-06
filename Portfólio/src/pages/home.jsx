@@ -19,6 +19,14 @@ function home() {
     // Navegar para a página Sobre ao clicar em algum botão
     irPara('/Ntz');
   };
+  const handleClickHms = () => {
+    // Navegar para a página Sobre ao clicar em algum botão
+    irPara('/Hms');
+  }
+    const handleClickLgs = () => {  
+      // Navegar para a página Sobre ao clicar em algum botão
+      irPara('/Lgs');
+  };
   // Retorna a estrutura JSX da página inicial
   return (
     <div>
@@ -27,9 +35,11 @@ function home() {
       {/* Botão para navegar para a página About ao ser clicado */}
       <button onClick={handleClickSobre}>Carta De Apresentação</button> &nbsp;
       <button onClick={handleClickMtm}>Matemática</button> &nbsp;
-      <button onClick={handleClickNtz}>Natureza</button>
+      <button onClick={handleClickNtz}>Natureza</button> &nbsp;
+      <button onClick={handleClickHms}>Humanas</button> &nbsp;
+      <button onClick={handleClickLgs}>Linguagens</button>
     </div>
   );
-}
+  }
 // Exporta o componente Home como padrão
 export default home;

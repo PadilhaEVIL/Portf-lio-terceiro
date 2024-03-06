@@ -9,6 +9,8 @@ import Sobre from './pages/sobre';
 // Define a função do componente principal App
 import Mtm from './pages/matematica';
 import Ntz from './pages/natureza';
+import Hms from './pages/humanas';
+import Lgs from './pages/linguagens';
 function App() {
   // Retorna a estrutura de roteamento usando o BrowserRouter
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/mtm" element={<Mtm />} />
         <Route path="/ntz" element={<Ntz />} />
+        <Route path="/hms" element={<Hms />} />
+        <Route path="/lgs" element={<Lgs />} />
       </Routes>
     </Router>
   );
